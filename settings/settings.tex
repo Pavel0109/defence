@@ -1,0 +1,36 @@
+\documentclass[specialist,
+               substylefile = settings/spbu.rtx,
+               subf,href,colorlinks=true, 12pt]{disser}
+
+\usepackage[a4paper,
+            mag=1000, includefoot,
+            left=3cm, right=1.5cm, top=2cm, bottom=2cm, headsep=1cm, footskip=1cm]{geometry}
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{hyperref}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\ifpdf\usepackage{epstopdf}\fi
+\usepackage{amsthm}
+\usepackage{import}
+% Точка с запятой в качестве разделителя между номерами цитирований
+%\setcitestyle{semicolon}
+
+% Использовать полужирное начертание для векторов
+\let\vec=\mathbf
+
+% Включать подсекции в оглавление
+\setcounter{tocdepth}{2}
+
+\graphicspath{{fig/}}
+
+
+%\newtheorem{definition}{Опредление}
+\theoremstyle{definition}
+\newtheorem{definition}{Определение}[section]
+\newcommand{\Z}{\mathbb{Z}}
+
+\title{Билеты Защитка}
+\date{2017\\ December}
+%----------------------------------------------------------------
